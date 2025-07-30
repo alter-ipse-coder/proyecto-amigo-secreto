@@ -52,7 +52,7 @@ Una aplicación web sencilla desarrollada con **HTML, CSS y JavaScript** que per
 1. Clona este repositorio o descarga los archivos:
    ```bash
    git clone https://github.com/tu-usuario/amigo-secreto.git
-````
+
 
 2. Abre `index.html` en tu navegador.
 
@@ -78,6 +78,7 @@ Este proyecto forma parte de un curso de introducción a la programación, con e
 ## 🙌 Autor
 
 Desarrollado por [José Luis Cordero](https://github.com/alter-ipse-coder).
+
 [Linkedin](https://www.linkedin.com/in/jose-luis-cordero-/) 
 Este proyecto es de uso libre para fines educativos.
 
