@@ -3,6 +3,17 @@
 // Creamos la lista para guardar los nombres de los amigos
 let amigos = [];
 
+// Al cargar la página, añadimos el evento "enter" al campo de texto
+document.addEventListener("DOMContentLoaded", () =>{
+    const input = document.getElementById("amigo");
+
+    input.addEventListener("keypress", function(event){
+        if(event.key === "Enter"){
+            agregarAmigo();
+        }
+    });
+});
+
 // Creamos una función que añada los amigos a la lista
 function agregarAmigo() {
     const input = document.getElementById("amigo");
@@ -41,4 +52,11 @@ function sortearAmigo(){
     const elementoResultado = document.createElement("li");
     elementoResultado.textContent = `El amigo secreto es: ${nombreSorteado}`;
     resultado.appendChild(elementoResultado);
+
+    // Limpiamos visualmente la lista de amigos
+    const lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+
+    // Vaciamos el arreglo amigos
+    amigos = []
 }
